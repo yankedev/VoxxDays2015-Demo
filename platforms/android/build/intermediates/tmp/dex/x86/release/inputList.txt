@@ -1,0 +1,5 @@
+/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/classes/x86/release
+/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/x86/release/classes-244fe9613541e0608a771ebfef0d348c3e6031fd.jar
+/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/x86/release/xwalk_core_library_java_app_part-620c782305755f4ef18cd19220e971108621df7a.jar
+/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/x86/release/classes-a932ea2398b0e4ff7b7c8bafb3daa935fd6a0a15.jar
+/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/x86/release/xwalk_core_library_java_library_part-39ac3c14f6280e4f44b941076357e80b87e42814.jar

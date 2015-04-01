@@ -1,0 +1,17 @@
+<ion-view view-title="Sessions">
+  <ion-content class="detail">
+
+	<h4>{{d.name}} | @{{d.username}}</h4>
+	<img ng-src="{{d.avatar}}" />
+	<p><span ng-if="d.position!= ''">{{ d.position }}</span> <span ng-if="d.company != ''">at {{d.company}}</span></p>
+	
+	<div ng-if="d.sessions[0].name">
+		<h3>Talks:</h3>
+		<ion-list>
+			<ion-item ng-repeat="s in d.sessions" href="#/app/session/{{s.id}}">
+				{{s.name}}
+			</ion-item>
+		</ion-list>
+	</div>
+  </ion-content>
+</ion-view>

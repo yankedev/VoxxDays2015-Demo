@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/org.crosswalk.engine/voxxedday2015377472-xwalk_core_library/assets"/></dataSet><dataSet config="debug"><source path="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/org.crosswalk.engine/voxxedday2015377472-xwalk_core_library/src/debug/assets"/></dataSet></merger>

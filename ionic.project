@@ -1,0 +1,17 @@
+{
+  "name": "voxxedday2015",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://voxxeddaysticino2015.sched.org/api"
+    }
+  ],
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "13.41.318.0"
+    }
+  ]
+}

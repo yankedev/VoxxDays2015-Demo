@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="03826f1ead214ee25a36c5951e0c18ef63901341">
+        <dex dex="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/armv7/debug/classes-692f8435ee9c1f8911a73b53de0c8eb4d8a1f814.jar" />
+    </item>
+    <item
+        jar="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/exploded-aar/android.org.crosswalk.engine/voxxedday2015377472-xwalk_core_library/unspecified/release/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="37461feae20e813919b8abd3f58efeab84d4444d">
+        <dex dex="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/armv7/release/classes-244fe9613541e0608a771ebfef0d348c3e6031fd.jar" />
+    </item>
+    <item
+        jar="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/exploded-aar/android.org.crosswalk.engine/voxxedday2015377472-xwalk_core_library/unspecified/debug/libs/xwalk_core_library_java_library_part.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="701edfc3ce16842032e9ff3439aecf6b6db01a39">
+        <dex dex="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/armv7/debug/xwalk_core_library_java_library_part-df18bce662466d297af96dbb0e1daae10738fc43.jar" />
+    </item>
+    <item
+        jar="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/exploded-aar/android.org.crosswalk.engine/voxxedday2015377472-xwalk_core_library/unspecified/debug/libs/xwalk_core_library_java_app_part.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9d9f5b8af9d8edf9d8e622fc98280e357c3befee">
+        <dex dex="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/armv7/debug/xwalk_core_library_java_app_part-9b19e30e7aad0ab556feaafaae7158eafead7a8a.jar" />
+    </item>
+    <item
+        jar="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/exploded-aar/android.org.crosswalk.engine/voxxedday2015377472-xwalk_core_library/unspecified/release/libs/xwalk_core_library_java_app_part.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9d9f5b8af9d8edf9d8e622fc98280e357c3befee">
+        <dex dex="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/armv7/release/xwalk_core_library_java_app_part-620c782305755f4ef18cd19220e971108621df7a.jar" />
+    </item>
+    <item
+        jar="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/exploded-aar/android.org.crosswalk.engine/voxxedday2015377472-xwalk_core_library/unspecified/debug/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ebb70c9c0d827f4834c55682ec5b2480d8c6f36f">
+        <dex dex="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/armv7/debug/classes-602ba3e498221da09fef8b336eb7ea467107c4a6.jar" />
+    </item>
+    <item
+        jar="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/release/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9712e3de415dd6cfe5f9b044485e31122a4ac47a">
+        <dex dex="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/armv7/release/classes-a932ea2398b0e4ff7b7c8bafb3daa935fd6a0a15.jar" />
+    </item>
+    <item
+        jar="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/exploded-aar/android.org.crosswalk.engine/voxxedday2015377472-xwalk_core_library/unspecified/release/libs/xwalk_core_library_java_library_part.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="701edfc3ce16842032e9ff3439aecf6b6db01a39">
+        <dex dex="/Users/alexintosh/Coding/vms/devbox/www/apps/voxxedday2015/platforms/android/build/intermediates/pre-dexed/armv7/release/xwalk_core_library_java_library_part-39ac3c14f6280e4f44b941076357e80b87e42814.jar" />
+    </item>
+
+</items>

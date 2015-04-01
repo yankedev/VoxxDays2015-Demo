@@ -1,0 +1,23 @@
+<ion-view view-title="{{title}}">
+  <ion-content class="listview">
+	<ion-refresher
+		spinner="ripple"
+		pulling-text="Pull to refresh..."
+		on-refresh="doRefresh()"
+	>
+	<ion-spinner icon="ripple"></ion-spinner>
+	</ion-refresher>
+
+	<ion-list>
+		<div class="timeline">
+			<div ng-repeat="s in sessions" style="position:relative">
+			<div ng-click="go(s.type)" class="ball {{ s.event_type.replace('&', '').split(' ').join('') }}"></div>
+				<ion-item  href="#/app/session/{{s.id}}">
+					<span class="title">{{s.event_start_time}}</span>
+					<span class="sub_title fw-300">{{s.name}}</span>
+				</ion-item>
+			</div>
+		</div>
+	</ion-list>
+  </ion-content>
+</ion-view>

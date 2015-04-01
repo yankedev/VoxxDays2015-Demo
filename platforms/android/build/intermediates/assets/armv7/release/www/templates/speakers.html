@@ -1,0 +1,11 @@
+<ion-view view-title="Speakers">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="s in speakers" href="#/app/speaker/{{s.sp_name}}">
+		<img ng-src="{{s.avatar}}">
+		<h2>{{ s.name }}</h2>
+		<p>{{ s.position }} <span ng-if="s.company != ''">at {{s.company}}</span></p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

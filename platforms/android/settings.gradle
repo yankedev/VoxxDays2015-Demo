@@ -1,0 +1,4 @@
+// GENERATED FILE - DO NOT EDIT
+include ":"
+include ":CordovaLib"
+include ":org.crosswalk.engine:voxxedday2015377472-xwalk_core_library"
