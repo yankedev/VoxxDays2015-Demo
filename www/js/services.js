@@ -21,7 +21,7 @@ angular.module('starter.services', [])
 }])
 
 .factory('Utils', function(URL, $ionicLoading, $localstorage, $rootScope){
-	
+
 	var shuffle = function(array) {
 		var m = array.length, t, i;
 		while (m) {
@@ -52,11 +52,11 @@ angular.module('starter.services', [])
 		});
 	};
 	*/
-	
+
 	var stateOnlineChanged = function(){
 		var newval = isOnline();
 		$rootScope.online = newval;
-		$rootScope.$broadcast('onlineUpdate', newval); 
+		$rootScope.$broadcast('onlineUpdate', newval);
 	};
 
 	var isOnline = function(){
@@ -112,8 +112,8 @@ angular.module('starter.services', [])
 		});
 	};
 	*/
-	
-	return { 
+
+	return {
 		showL: showL,
 		hideL: hideL,
 		shuffle: shuffle,
@@ -124,13 +124,16 @@ angular.module('starter.services', [])
 
 .factory('Api', function($http, ApiEndpoint) {
 	var K = "4a983d5abeb7573100f9c188b3a82021";
-	var bUrl = function(endpoint, format){
+	var bUrl = function(endpoint, format, urlParameter){
 		var format = format || 'json';
+        if (urlParameter) {
+            format = format +'&'+urlParameter;
+        }
 		return ApiEndpoint.url + endpoint + '?api_key='+K+'&format=' + format;
 	};
 
-	var get = function(endpoint) {
-			return $http.get( bUrl(endpoint) )
+	var get = function(endpoint, urlParameter) {
+			return $http.get( bUrl(endpoint, 'json', urlParameter) )
 		.then(function(data) {
 			if(data.status === 200)
 				return data.data;
@@ -147,7 +150,8 @@ angular.module('starter.services', [])
 	var fetch = function(){
 		var f = $localstorage.getObject('speakers');
 		if(!f) {
-			return Api.get('/user/list').then(function(data){
+            //https://voxxeddaysticino2015.sched.org/api/role/export?api_key=4a983d5abeb7573100f9c188b3a82021&format=json&role=speaker
+			return Api.get('/role/export', 'role=speaker').then(function(data){
 				$localstorage.setObject('speakers', data);
 				return data;
 			});
@@ -159,12 +163,12 @@ angular.module('starter.services', [])
 	var get = function(name){
 		var sp = fetch();
 		for(var i in sp){
-			if(sp[i].name.replace(/ /g,'') === name.replace(/ /g,'') )
+            if(sp[i].name.replace(/ /g,'') === name.replace(/ /g,'') )
 				return sp[i];
 		}
 		return false;
 	}
-	
+
 	return {
 		get: get,
 		fetch: fetch
@@ -173,14 +177,14 @@ angular.module('starter.services', [])
 })
 
 .factory('SessionsSv', function($localstorage, Api, $q) {
-	
+
 	var service = {};
 
 	service.fetch = function(){
 		var sessions = $localstorage.getObject('sessions');
 		if(!sessions) {
 			Api.get('/session/list').then(function(data){
-				$localstorage.setObject('sessions', data);		
+				$localstorage.setObject('sessions', data);
 				return data;
 			});
 		}
@@ -226,7 +230,7 @@ angular.module('starter.services', [])
 			service.fetch().then(function(data){
 				return service._byId(id, data)
 			});
-		} 
+		}
 
 		return service._byId(id, sessions)
 	}
