@@ -10,7 +10,7 @@ angular.module('starter.controllers', [])
 
 .controller('SessionsCtrl', function($scope, $state, Api, $localstorage, SessionsSv, Utils) {
 	var sessions = $localstorage.getObject('sessions');
-	
+
 	$scope.title = 'Sessions';
 	$scope.doRefresh = function() {
 		Api.get('/session/export').then(function(data){
@@ -19,8 +19,8 @@ angular.module('starter.controllers', [])
 					data[i].type = data[i].event_type.replace(/ /g,'');
 			}
 			c(data);
-			$localstorage.setObject('sessions', data);		
-			$scope.sessions = data;			
+			$localstorage.setObject('sessions', data);
+			$scope.sessions = data;
 		})
 		.finally(function(data) {
 			// Stop the ion-refresher from spinning
@@ -34,16 +34,16 @@ angular.module('starter.controllers', [])
 
 	$scope.go = function(type){
 		c(type);
-		if(type != undefined) 
+		if(type != undefined)
 			$state.go('app.sessions_type', {type:type});
 	}
-	
+
 	if(!sessions) {
-		$scope.doRefresh();		
+		$scope.doRefresh();
 	}
 
 	$scope.sessions = sessions;
-	
+
 })
 
 .controller('SessionCtrl', function($scope, $stateParams, SessionsSv, Utils, Speakers) {
@@ -51,15 +51,19 @@ angular.module('starter.controllers', [])
 	Utils.showL();
 
 	var d = SessionsSv.get(id);
-	d.event_start = new Date(d.event_start).toISOString();
-	d.event_end= new Date(d.event_end).toISOString();
+
+
+    d.event_start = new Date(d.event_start.replace(/-/g, "/"));
+	d.event_end= new Date(d.event_end.replace(/-/g, "/"));
 
 	if( d.speakers ){
 		d.speaker = Speakers.get( d.speakers[0].name );
 		d.sp_name = d.speakers[0].name.replace(/ /g,'');
 	}
 	$scope.d = d;
-	Utils.hideL();
+    Utils.hideL();
+
+
 })
 
 .controller('TypeCtrl', function($scope, Api, $localstorage, SessionsSv, Utils, $stateParams) {
