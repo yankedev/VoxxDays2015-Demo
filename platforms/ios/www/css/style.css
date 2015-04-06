@@ -1,0 +1,154 @@
+/* Empty. Add your own CSS if you like */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+body > *{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.white {
+	color:white !important;
+}
+
+.black-bg{
+	background:#000 !important;
+}
+
+.bar-black{
+	background:#000;
+	text-align:left;
+	text-transform: uppercase;
+	color:#fff;
+}
+
+.padded {
+	padding: 25px;
+}
+
+.bar .title {
+	text-align: left !important;
+}
+
+.noBold{
+	font-weight: 300;
+	text-transform: none;
+}
+
+.text-right{
+	text-align:right;
+}
+
+.text-left{
+	text-align:left;
+}
+
+.uppercase {
+	text-transform:uppercase !important;
+}
+
+.fw-300{
+	font-weight:300;
+}
+.fw-400{
+	font-weight:400;
+}
+.fw-700{
+	font-weight:700;
+}
+
+.timeline{
+	position: relative;
+	padding: 0px 0 0px 0;
+	height: auto;
+}
+
+.timeline::before {
+	/* this is the vertical line */
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 18px;
+	height: 100%;
+	width: 1px;
+	background: #d7e4ed;
+}
+
+/* Listview */
+
+.listview .timeline::before{
+	right: 30px;
+	z-index: 3;
+	left: initial;
+}
+
+.listview .timeline .ball{
+	border-radius:20px;
+	width:20px;
+	height:20px;
+	border: 1px solid #d7e4ed;
+	position: absolute;
+	background: #000;
+	right: 22px;
+	top: 21px;
+	z-index: 999999;
+}
+
+.listview .title , .detailView .title{
+	color:#000;
+	text-decoration: underline;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.listview .sub_title {
+	color:#000;
+	font-size: 13px;
+	text-transform: capitalize;
+}
+
+/* DetailView */
+.detail{
+	padding:10px;
+}
+
+.MeetSponsors {
+	background:#EDEDED !important;
+}
+
+.Keynote{
+	background:#F9FB28 !important;
+}
+
+.BigDataCloud{
+	background:#50CEED !important;
+}
+
+.JavaJVM{
+	background:#F13013 !important;
+}
+.JVMWebDevelopment{
+	background:#AC59E8 !important;
+}
+
+.Methodology{
+	background:#ECB022;
+}
+
+.Mobile{
+	background:#A3C928;
+}
+
+.Security {
+	background:#4BF444;
+}
+
+.UnitedHackers{
+	background:#B1B1B1;
+}
+
+/* Credits */
+

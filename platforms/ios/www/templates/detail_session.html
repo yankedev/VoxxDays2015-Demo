@@ -1,0 +1,17 @@
+<ion-view view-title="Session">
+  <ion-content class="detail">
+
+	<img ng-src="{{d.speaker.avatar}}" />
+	<h4>{{d.name}}</h4>
+	<h5><a href="#/app/sessions_type/{{d.type}}">{{d.event_type}}</a></h5>
+	<div>
+		From:<span class="balanced"> {{d.event_start| date:'shortTime'}}</span>
+		 to <span class="assertive">{{d.event_end| date:'shortTime'}}</span>
+	</div>
+	<div>
+		by <a href="#/app/speaker/{{d.sp_name}}">{{d.speaker.name}}</a> at {{d.venue}}
+	</div>
+	<br/>
+	<p ng-bind-html="d.description"></p>
+  </ion-content>
+</ion-view>
